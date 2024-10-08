@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "Compose_bacic_practice"
 include(":app")
 include(":taskmanagerapp")
+include(":composequadrant")
