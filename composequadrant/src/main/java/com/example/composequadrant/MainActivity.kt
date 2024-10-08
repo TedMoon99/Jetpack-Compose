@@ -37,7 +37,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Compose_bacic_practiceTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
-
+                    ComposeQuadrantApp()
                 }
             }
         }
