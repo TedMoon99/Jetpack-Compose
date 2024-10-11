@@ -1,6 +1,5 @@
 package com.example.lemonade.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -9,18 +8,21 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = Color(0xFFf8d2b3),
+    secondary = Color(0xFFd0d68b),
+    tertiary = Color(0xFFECD4d7),
+    background = Color(0xFFddb8b8)
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = Color(0xFFf8d2b3),
+    secondary = Color(0xFFd0d68b),
+    tertiary = Color(0xFFECD4d7),
+    background = Color(0xFFddb8b8)
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -34,7 +36,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun Compose_bacic_practiceTheme(
+fun Compose_basic_practiceTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
